@@ -1,0 +1,816 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D1884BBE1E746C0600442B9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1884BBD1E746C0600442B9E /* AppDelegate.swift */; };
+		D1884BC01E746C0600442B9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1884BBF1E746C0600442B9E /* ViewController.swift */; };
+		D1884BC31E746C0600442B9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1884BC11E746C0600442B9E /* Main.storyboard */; };
+		D1884BC51E746C0600442B9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1884BC41E746C0600442B9E /* Assets.xcassets */; };
+		D1884BC81E746C0600442B9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1884BC61E746C0600442B9E /* LaunchScreen.storyboard */; };
+		D1884BD31E746C0600442B9E /* violinTunerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1884BD21E746C0600442B9E /* violinTunerTests.swift */; };
+		D1884BDE1E746C0600442B9E /* violinTunerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1884BDD1E746C0600442B9E /* violinTunerUITests.swift */; };
+		D1884BE31E746C0700442B9E /* violinTuner WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D1884BE21E746C0700442B9E /* violinTuner WatchKit App.app */; };
+		D1884BE91E746C0700442B9E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1884BE71E746C0700442B9E /* Interface.storyboard */; };
+		D1884BEB1E746C0700442B9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1884BEA1E746C0700442B9E /* Assets.xcassets */; };
+		D1884BF21E746C0700442B9E /* violinTuner WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D1884BF11E746C0700442B9E /* violinTuner WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D1884BF91E746C0700442B9E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1884BF81E746C0700442B9E /* InterfaceController.swift */; };
+		D1884BFB1E746C0700442B9E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1884BFA1E746C0700442B9E /* ExtensionDelegate.swift */; };
+		D1884BFD1E746C0700442B9E /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1884BFC1E746C0700442B9E /* NotificationController.swift */; };
+		D1884BFF1E746C0700442B9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1884BFE1E746C0700442B9E /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D1884BCF1E746C0600442B9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1884BB21E746C0600442B9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1884BB91E746C0600442B9E;
+			remoteInfo = violinTuner;
+		};
+		D1884BDA1E746C0600442B9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1884BB21E746C0600442B9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1884BB91E746C0600442B9E;
+			remoteInfo = violinTuner;
+		};
+		D1884BE41E746C0700442B9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1884BB21E746C0600442B9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1884BE11E746C0700442B9E;
+			remoteInfo = "violinTuner WatchKit App";
+		};
+		D1884BF31E746C0700442B9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1884BB21E746C0600442B9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1884BF01E746C0700442B9E;
+			remoteInfo = "violinTuner WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D1884C061E746C0700442B9E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D1884BF21E746C0700442B9E /* violinTuner WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1884C0A1E746C0700442B9E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D1884BE31E746C0700442B9E /* violinTuner WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D1884BBA1E746C0600442B9E /* violinTuner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = violinTuner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1884BBD1E746C0600442B9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D1884BBF1E746C0600442B9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D1884BC21E746C0600442B9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D1884BC41E746C0600442B9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1884BC71E746C0600442B9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D1884BC91E746C0600442B9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1884BCE1E746C0600442B9E /* violinTunerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = violinTunerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1884BD21E746C0600442B9E /* violinTunerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = violinTunerTests.swift; sourceTree = "<group>"; };
+		D1884BD41E746C0600442B9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1884BD91E746C0600442B9E /* violinTunerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = violinTunerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1884BDD1E746C0600442B9E /* violinTunerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = violinTunerUITests.swift; sourceTree = "<group>"; };
+		D1884BDF1E746C0600442B9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1884BE21E746C0700442B9E /* violinTuner WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "violinTuner WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1884BE81E746C0700442B9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		D1884BEA1E746C0700442B9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1884BEC1E746C0700442B9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1884BF11E746C0700442B9E /* violinTuner WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "violinTuner WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1884BF71E746C0700442B9E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		D1884BF81E746C0700442B9E /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		D1884BFA1E746C0700442B9E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		D1884BFC1E746C0700442B9E /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		D1884BFE1E746C0700442B9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1884C001E746C0700442B9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1884BB71E746C0600442B9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1884BCB1E746C0600442B9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1884BD61E746C0600442B9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1884BEE1E746C0700442B9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D1884BB11E746C0600442B9E = {
+			isa = PBXGroup;
+			children = (
+				D1884BBC1E746C0600442B9E /* violinTuner */,
+				D1884BD11E746C0600442B9E /* violinTunerTests */,
+				D1884BDC1E746C0600442B9E /* violinTunerUITests */,
+				D1884BE61E746C0700442B9E /* violinTuner WatchKit App */,
+				D1884BF51E746C0700442B9E /* violinTuner WatchKit Extension */,
+				D1884BBB1E746C0600442B9E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D1884BBB1E746C0600442B9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1884BBA1E746C0600442B9E /* violinTuner.app */,
+				D1884BCE1E746C0600442B9E /* violinTunerTests.xctest */,
+				D1884BD91E746C0600442B9E /* violinTunerUITests.xctest */,
+				D1884BE21E746C0700442B9E /* violinTuner WatchKit App.app */,
+				D1884BF11E746C0700442B9E /* violinTuner WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1884BBC1E746C0600442B9E /* violinTuner */ = {
+			isa = PBXGroup;
+			children = (
+				D1884BBD1E746C0600442B9E /* AppDelegate.swift */,
+				D1884BBF1E746C0600442B9E /* ViewController.swift */,
+				D1884BC11E746C0600442B9E /* Main.storyboard */,
+				D1884BC41E746C0600442B9E /* Assets.xcassets */,
+				D1884BC61E746C0600442B9E /* LaunchScreen.storyboard */,
+				D1884BC91E746C0600442B9E /* Info.plist */,
+			);
+			path = violinTuner;
+			sourceTree = "<group>";
+		};
+		D1884BD11E746C0600442B9E /* violinTunerTests */ = {
+			isa = PBXGroup;
+			children = (
+				D1884BD21E746C0600442B9E /* violinTunerTests.swift */,
+				D1884BD41E746C0600442B9E /* Info.plist */,
+			);
+			path = violinTunerTests;
+			sourceTree = "<group>";
+		};
+		D1884BDC1E746C0600442B9E /* violinTunerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D1884BDD1E746C0600442B9E /* violinTunerUITests.swift */,
+				D1884BDF1E746C0600442B9E /* Info.plist */,
+			);
+			path = violinTunerUITests;
+			sourceTree = "<group>";
+		};
+		D1884BE61E746C0700442B9E /* violinTuner WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				D1884BE71E746C0700442B9E /* Interface.storyboard */,
+				D1884BEA1E746C0700442B9E /* Assets.xcassets */,
+				D1884BEC1E746C0700442B9E /* Info.plist */,
+			);
+			path = "violinTuner WatchKit App";
+			sourceTree = "<group>";
+		};
+		D1884BF51E746C0700442B9E /* violinTuner WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D1884BF81E746C0700442B9E /* InterfaceController.swift */,
+				D1884BFA1E746C0700442B9E /* ExtensionDelegate.swift */,
+				D1884BFC1E746C0700442B9E /* NotificationController.swift */,
+				D1884BFE1E746C0700442B9E /* Assets.xcassets */,
+				D1884C001E746C0700442B9E /* Info.plist */,
+				D1884BF61E746C0700442B9E /* Supporting Files */,
+			);
+			path = "violinTuner WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		D1884BF61E746C0700442B9E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D1884BF71E746C0700442B9E /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D1884BB91E746C0600442B9E /* violinTuner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1884C0B1E746C0700442B9E /* Build configuration list for PBXNativeTarget "violinTuner" */;
+			buildPhases = (
+				D1884BB61E746C0600442B9E /* Sources */,
+				D1884BB71E746C0600442B9E /* Frameworks */,
+				D1884BB81E746C0600442B9E /* Resources */,
+				D1884C0A1E746C0700442B9E /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1884BE51E746C0700442B9E /* PBXTargetDependency */,
+			);
+			name = violinTuner;
+			productName = violinTuner;
+			productReference = D1884BBA1E746C0600442B9E /* violinTuner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D1884BCD1E746C0600442B9E /* violinTunerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1884C0E1E746C0700442B9E /* Build configuration list for PBXNativeTarget "violinTunerTests" */;
+			buildPhases = (
+				D1884BCA1E746C0600442B9E /* Sources */,
+				D1884BCB1E746C0600442B9E /* Frameworks */,
+				D1884BCC1E746C0600442B9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1884BD01E746C0600442B9E /* PBXTargetDependency */,
+			);
+			name = violinTunerTests;
+			productName = violinTunerTests;
+			productReference = D1884BCE1E746C0600442B9E /* violinTunerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D1884BD81E746C0600442B9E /* violinTunerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1884C111E746C0700442B9E /* Build configuration list for PBXNativeTarget "violinTunerUITests" */;
+			buildPhases = (
+				D1884BD51E746C0600442B9E /* Sources */,
+				D1884BD61E746C0600442B9E /* Frameworks */,
+				D1884BD71E746C0600442B9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1884BDB1E746C0600442B9E /* PBXTargetDependency */,
+			);
+			name = violinTunerUITests;
+			productName = violinTunerUITests;
+			productReference = D1884BD91E746C0600442B9E /* violinTunerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		D1884BE11E746C0700442B9E /* violinTuner WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1884C071E746C0700442B9E /* Build configuration list for PBXNativeTarget "violinTuner WatchKit App" */;
+			buildPhases = (
+				D1884BE01E746C0700442B9E /* Resources */,
+				D1884C061E746C0700442B9E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1884BF41E746C0700442B9E /* PBXTargetDependency */,
+			);
+			name = "violinTuner WatchKit App";
+			productName = "violinTuner WatchKit App";
+			productReference = D1884BE21E746C0700442B9E /* violinTuner WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D1884BF01E746C0700442B9E /* violinTuner WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1884C031E746C0700442B9E /* Build configuration list for PBXNativeTarget "violinTuner WatchKit Extension" */;
+			buildPhases = (
+				D1884BED1E746C0700442B9E /* Sources */,
+				D1884BEE1E746C0700442B9E /* Frameworks */,
+				D1884BEF1E746C0700442B9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "violinTuner WatchKit Extension";
+			productName = "violinTuner WatchKit Extension";
+			productReference = D1884BF11E746C0700442B9E /* violinTuner WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1884BB21E746C0600442B9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Justyna Wojtczak";
+				TargetAttributes = {
+					D1884BB91E746C0600442B9E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = DS9295DMJ5;
+						ProvisioningStyle = Automatic;
+					};
+					D1884BCD1E746C0600442B9E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = DS9295DMJ5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D1884BB91E746C0600442B9E;
+					};
+					D1884BD81E746C0600442B9E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = DS9295DMJ5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D1884BB91E746C0600442B9E;
+					};
+					D1884BE11E746C0700442B9E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = DS9295DMJ5;
+						ProvisioningStyle = Automatic;
+					};
+					D1884BF01E746C0700442B9E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = DS9295DMJ5;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D1884BB51E746C0600442B9E /* Build configuration list for PBXProject "violinTuner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D1884BB11E746C0600442B9E;
+			productRefGroup = D1884BBB1E746C0600442B9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1884BB91E746C0600442B9E /* violinTuner */,
+				D1884BCD1E746C0600442B9E /* violinTunerTests */,
+				D1884BD81E746C0600442B9E /* violinTunerUITests */,
+				D1884BE11E746C0700442B9E /* violinTuner WatchKit App */,
+				D1884BF01E746C0700442B9E /* violinTuner WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D1884BB81E746C0600442B9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1884BC81E746C0600442B9E /* LaunchScreen.storyboard in Resources */,
+				D1884BC51E746C0600442B9E /* Assets.xcassets in Resources */,
+				D1884BC31E746C0600442B9E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1884BCC1E746C0600442B9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1884BD71E746C0600442B9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1884BE01E746C0700442B9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1884BEB1E746C0700442B9E /* Assets.xcassets in Resources */,
+				D1884BE91E746C0700442B9E /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1884BEF1E746C0700442B9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1884BFF1E746C0700442B9E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D1884BB61E746C0600442B9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1884BC01E746C0600442B9E /* ViewController.swift in Sources */,
+				D1884BBE1E746C0600442B9E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1884BCA1E746C0600442B9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1884BD31E746C0600442B9E /* violinTunerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1884BD51E746C0600442B9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1884BDE1E746C0600442B9E /* violinTunerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1884BED1E746C0700442B9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1884BFD1E746C0700442B9E /* NotificationController.swift in Sources */,
+				D1884BFB1E746C0700442B9E /* ExtensionDelegate.swift in Sources */,
+				D1884BF91E746C0700442B9E /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D1884BD01E746C0600442B9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1884BB91E746C0600442B9E /* violinTuner */;
+			targetProxy = D1884BCF1E746C0600442B9E /* PBXContainerItemProxy */;
+		};
+		D1884BDB1E746C0600442B9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1884BB91E746C0600442B9E /* violinTuner */;
+			targetProxy = D1884BDA1E746C0600442B9E /* PBXContainerItemProxy */;
+		};
+		D1884BE51E746C0700442B9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1884BE11E746C0700442B9E /* violinTuner WatchKit App */;
+			targetProxy = D1884BE41E746C0700442B9E /* PBXContainerItemProxy */;
+		};
+		D1884BF41E746C0700442B9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1884BF01E746C0700442B9E /* violinTuner WatchKit Extension */;
+			targetProxy = D1884BF31E746C0700442B9E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D1884BC11E746C0600442B9E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1884BC21E746C0600442B9E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D1884BC61E746C0600442B9E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1884BC71E746C0600442B9E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D1884BE71E746C0700442B9E /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1884BE81E746C0700442B9E /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D1884C011E746C0700442B9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D1884C021E746C0700442B9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D1884C041E746C0700442B9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = DS9295DMJ5;
+				INFOPLIST_FILE = "violinTuner WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = justi.violinTuner.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		D1884C051E746C0700442B9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = DS9295DMJ5;
+				INFOPLIST_FILE = "violinTuner WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = justi.violinTuner.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		D1884C081E746C0700442B9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DS9295DMJ5;
+				IBSC_MODULE = violinTuner_WatchKit_Extension;
+				INFOPLIST_FILE = "violinTuner WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = justi.violinTuner.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		D1884C091E746C0700442B9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DS9295DMJ5;
+				IBSC_MODULE = violinTuner_WatchKit_Extension;
+				INFOPLIST_FILE = "violinTuner WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = justi.violinTuner.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		D1884C0C1E746C0700442B9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DS9295DMJ5;
+				INFOPLIST_FILE = violinTuner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = justi.violinTuner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D1884C0D1E746C0700442B9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DS9295DMJ5;
+				INFOPLIST_FILE = violinTuner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = justi.violinTuner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D1884C0F1E746C0700442B9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = DS9295DMJ5;
+				INFOPLIST_FILE = violinTunerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = justi.violinTunerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/violinTuner.app/violinTuner";
+			};
+			name = Debug;
+		};
+		D1884C101E746C0700442B9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = DS9295DMJ5;
+				INFOPLIST_FILE = violinTunerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = justi.violinTunerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/violinTuner.app/violinTuner";
+			};
+			name = Release;
+		};
+		D1884C121E746C0700442B9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = DS9295DMJ5;
+				INFOPLIST_FILE = violinTunerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = justi.violinTunerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = violinTuner;
+			};
+			name = Debug;
+		};
+		D1884C131E746C0700442B9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = DS9295DMJ5;
+				INFOPLIST_FILE = violinTunerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = justi.violinTunerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = violinTuner;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D1884BB51E746C0600442B9E /* Build configuration list for PBXProject "violinTuner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1884C011E746C0700442B9E /* Debug */,
+				D1884C021E746C0700442B9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1884C031E746C0700442B9E /* Build configuration list for PBXNativeTarget "violinTuner WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1884C041E746C0700442B9E /* Debug */,
+				D1884C051E746C0700442B9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D1884C071E746C0700442B9E /* Build configuration list for PBXNativeTarget "violinTuner WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1884C081E746C0700442B9E /* Debug */,
+				D1884C091E746C0700442B9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D1884C0B1E746C0700442B9E /* Build configuration list for PBXNativeTarget "violinTuner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1884C0C1E746C0700442B9E /* Debug */,
+				D1884C0D1E746C0700442B9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D1884C0E1E746C0700442B9E /* Build configuration list for PBXNativeTarget "violinTunerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1884C0F1E746C0700442B9E /* Debug */,
+				D1884C101E746C0700442B9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D1884C111E746C0700442B9E /* Build configuration list for PBXNativeTarget "violinTunerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1884C121E746C0700442B9E /* Debug */,
+				D1884C131E746C0700442B9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D1884BB21E746C0600442B9E /* Project object */;
+}

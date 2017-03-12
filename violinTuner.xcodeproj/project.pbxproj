@@ -22,6 +22,10 @@
 		D1884BFB1E746C0700442B9E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1884BFA1E746C0700442B9E /* ExtensionDelegate.swift */; };
 		D1884BFD1E746C0700442B9E /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1884BFC1E746C0700442B9E /* NotificationController.swift */; };
 		D1884BFF1E746C0700442B9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1884BFE1E746C0700442B9E /* Assets.xcassets */; };
+		D1884C191E74BDBD00442B9E /* InterfaceGStringController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1884C181E74BDBD00442B9E /* InterfaceGStringController.swift */; };
+		D1884C1B1E74CBCB00442B9E /* InterfaceDStringController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1884C1A1E74CBCB00442B9E /* InterfaceDStringController.swift */; };
+		D1884C1D1E74CE6600442B9E /* InterfaceAStringController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1884C1C1E74CE6600442B9E /* InterfaceAStringController.swift */; };
+		D1884C1F1E74CF6C00442B9E /* InterfaceEStringController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1884C1E1E74CF6C00442B9E /* InterfaceEStringController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +109,10 @@
 		D1884BFC1E746C0700442B9E /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		D1884BFE1E746C0700442B9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1884C001E746C0700442B9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1884C181E74BDBD00442B9E /* InterfaceGStringController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceGStringController.swift; sourceTree = "<group>"; };
+		D1884C1A1E74CBCB00442B9E /* InterfaceDStringController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceDStringController.swift; sourceTree = "<group>"; };
+		D1884C1C1E74CE6600442B9E /* InterfaceAStringController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceAStringController.swift; sourceTree = "<group>"; };
+		D1884C1E1E74CF6C00442B9E /* InterfaceEStringController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceEStringController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +221,10 @@
 				D1884BFE1E746C0700442B9E /* Assets.xcassets */,
 				D1884C001E746C0700442B9E /* Info.plist */,
 				D1884BF61E746C0700442B9E /* Supporting Files */,
+				D1884C181E74BDBD00442B9E /* InterfaceGStringController.swift */,
+				D1884C1C1E74CE6600442B9E /* InterfaceAStringController.swift */,
+				D1884C1A1E74CBCB00442B9E /* InterfaceDStringController.swift */,
+				D1884C1E1E74CF6C00442B9E /* InterfaceEStringController.swift */,
 			);
 			path = "violinTuner WatchKit Extension";
 			sourceTree = "<group>";
@@ -452,8 +464,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1884C1D1E74CE6600442B9E /* InterfaceAStringController.swift in Sources */,
+				D1884C191E74BDBD00442B9E /* InterfaceGStringController.swift in Sources */,
 				D1884BFD1E746C0700442B9E /* NotificationController.swift in Sources */,
 				D1884BFB1E746C0700442B9E /* ExtensionDelegate.swift in Sources */,
+				D1884C1B1E74CBCB00442B9E /* InterfaceDStringController.swift in Sources */,
+				D1884C1F1E74CF6C00442B9E /* InterfaceEStringController.swift in Sources */,
 				D1884BF91E746C0700442B9E /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,14 +1,30 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--StringG-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller identifier="StringG" id="AgC-eL-Hgc" customClass="InterfaceGStringController" customModule="violinTuner_WatchKit_Extension">
+                    <items>
+                        <label width="136" height="64" alignment="left" text="String" textAlignment="center" id="TdP-oi-sRd">
+                            <fontDescription key="font" type="system" pointSize="50"/>
+                        </label>
+                        <label width="136" alignment="left" text="Frequency" textAlignment="center" id="9cV-me-0lH"/>
+                    </items>
+                    <connections>
+                        <outlet property="frequencyLabel" destination="9cV-me-0lH" id="tf7-j5-QyH"/>
+                        <outlet property="stringNameLabel" destination="TdP-oi-sRd" id="KE4-wU-SQe"/>
+                        <segue destination="W6d-ae-pOH" kind="relationship" relationship="nextPage" id="b3h-aD-7nf"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
@@ -28,10 +44,66 @@
             </objects>
             <point key="canvasLocation" x="220" y="643"/>
         </scene>
+        <!--StringD-->
+        <scene sceneID="SOJ-XA-WJ1">
+            <objects>
+                <controller identifier="StringD" id="W6d-ae-pOH" customClass="InterfaceDStringController" customModule="violinTuner_WatchKit_Extension">
+                    <items>
+                        <label width="136" height="64" alignment="left" text="String" textAlignment="center" id="ByB-RY-pnM">
+                            <fontDescription key="font" type="system" pointSize="50"/>
+                        </label>
+                        <label width="136" alignment="left" text="Frequency" textAlignment="center" id="P9c-Be-Me4"/>
+                    </items>
+                    <connections>
+                        <outlet property="frequencyLabel" destination="P9c-Be-Me4" id="hK5-au-dSJ"/>
+                        <outlet property="stringNameLabel" destination="ByB-RY-pnM" id="FEd-9r-aD3"/>
+                        <segue destination="rLD-QC-tI9" kind="relationship" relationship="nextPage" id="3jS-fy-p0n"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="454" y="345"/>
+        </scene>
+        <!--StringA-->
+        <scene sceneID="S4k-AZ-sy6">
+            <objects>
+                <controller identifier="StringA" id="rLD-QC-tI9" customClass="InterfaceAStringController" customModule="violinTuner_WatchKit_Extension">
+                    <items>
+                        <label width="136" height="64" alignment="left" text="String" textAlignment="center" id="Vk6-ob-5sr">
+                            <fontDescription key="font" type="system" pointSize="50"/>
+                        </label>
+                        <label width="136" alignment="left" text="Frequency" textAlignment="center" id="1As-0c-T8n"/>
+                    </items>
+                    <connections>
+                        <outlet property="frequencyLabel" destination="1As-0c-T8n" id="qoZ-2o-giY"/>
+                        <outlet property="stringNameLabel" destination="Vk6-ob-5sr" id="NRF-wL-UoD"/>
+                        <segue destination="xbx-Mi-F8e" kind="relationship" relationship="nextPage" id="hEl-ZL-HKI"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="687" y="345"/>
+        </scene>
+        <!--StringE-->
+        <scene sceneID="0Gj-ay-rDC">
+            <objects>
+                <controller identifier="StringE" id="xbx-Mi-F8e" customClass="InterfaceEStringController" customModule="violinTuner_WatchKit_Extension">
+                    <items>
+                        <label width="136" height="64" alignment="left" text="String" textAlignment="center" id="DrX-7N-7oQ">
+                            <fontDescription key="font" type="system" pointSize="50"/>
+                        </label>
+                        <label width="136" alignment="left" text="Frequency" textAlignment="center" id="BRb-6d-QDQ"/>
+                    </items>
+                    <connections>
+                        <outlet property="frequencyLabel" destination="BRb-6d-QDQ" id="OWA-EF-5Xa"/>
+                        <outlet property="stringNameLabel" destination="DrX-7N-7oQ" id="NUd-TL-12k"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="921" y="345"/>
+        </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="violinTuner_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
